@@ -15,3 +15,8 @@ class LoginStatus:
   def __init__(self, requiresPassword, authenticated):
     self.requiresPassword: bool = requiresPassword
     self.authenticated: bool = authenticated
+
+class WgEasyManagerOptions:
+  def __init__(self, url, password):
+    self.url: str = url
+    self.password: str = password
