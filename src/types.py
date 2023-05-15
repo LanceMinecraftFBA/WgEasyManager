@@ -10,3 +10,8 @@ class WireGuardKey:
     self.createdAt: datetime = createdAt
     self.updatedAt: Optional[datetime] = updatedAt
     self.persistentKeepAlive: str = persistentKeepAlive
+
+class LoginStatus:
+  def __init__(self, requiresPassword, authenticated):
+    self.requiresPassword: bool = requiresPassword
+    self.authenticated: bool = authenticated
